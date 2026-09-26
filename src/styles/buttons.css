@@ -1,0 +1,89 @@
+.btn {
+  --h: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  height: var(--h);
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 14.5px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s,
+    color 0.25s,
+    border-color 0.25s,
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+.btn svg {
+  transition: transform 0.35s var(--ease);
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--sm {
+  --h: 38px;
+  padding: 0 15px;
+  font-size: 13.5px;
+}
+
+.btn--lg {
+  --h: 54px;
+  padding: 0 26px;
+  font-size: 15.5px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--ink {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn--ink:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 14px 30px -14px rgba(196, 71, 43, 0.7);
+}
+
+.btn--accent {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--accent:hover {
+  background: #d4542f;
+  box-shadow: 0 14px 34px -12px rgba(196, 71, 43, 0.75);
+}
+
+.btn--ghost {
+  border-color: var(--line-2);
+  color: var(--ink);
+}
+
+.btn--ghost:hover {
+  border-color: var(--ink);
+  background: var(--card);
+}
+
+.btn--paper {
+  background: var(--cream);
+  color: var(--coal);
+}
+
+.btn--paper:hover {
+  background: #fff;
+}

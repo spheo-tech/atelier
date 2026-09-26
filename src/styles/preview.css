@@ -1,0 +1,69 @@
+/* Browser frame. */
+
+.browser {
+  position: relative;
+  border: 1px solid var(--line-2);
+  border-radius: 14px;
+  background: var(--card);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.browser__bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 36px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper-2) 60%, var(--card));
+}
+
+.browser__dots {
+  display: flex;
+  gap: 6px;
+  width: 46px;
+  flex: none;
+}
+
+.browser__dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--paper-3);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+.browser__url {
+  margin-inline: auto;
+  padding: 3px 14px;
+  border-radius: 999px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+.browser__spacer {
+  width: 46px;
+  flex: none;
+  margin-left: auto;
+}
+
+.browser__url + .browser__spacer {
+  margin-left: 0;
+}
+
+.browser__screen {
+  position: relative;
+  background: #fff;
+}
+
+.browser__screen > img {
+  width: 100%;
+}
